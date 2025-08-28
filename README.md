@@ -7,7 +7,7 @@ It's a bit simple code with a lot of funcionality, this is my first write progra
 ---
 
 ### Why python :snake:
-The truely question is why not, I choose it for the simplycity that oder languajes don't give I know that `C#` is a lot better but also it seen like hell, so for muy first one I definitly choose python, may be in the future I will change it.
+The truely question is why not, I choose it for the simplicity that oder languajes don't give I know that `C#` is a lot better but also it seen like hell, so for muy first one I definitly choose python, may be in the future I will change it.
 
 ---
 
