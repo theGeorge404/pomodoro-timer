@@ -25,9 +25,15 @@ You just need to install the lastest version of `python`. You can download it fo
 ### How to run it :runner:
 Go to [relases](https://github.com/theGeorge404/pomodoro-timer/releases) and download the file named `pomodoro_timer.py` execute it every time to use it. 
 
+### Info :eyes:
+- In the main menu, write `debug` to see all variable values and restore them.
+-You **can't** put a decimal numers in time
 ---
 ## Bugs :bug:
 May you will discover some bugs while using the program, please contact me to repair it.
+
+### Known bugs :anger:
+No one, yet...
 
 ---
 ## Error Definitions :book:
