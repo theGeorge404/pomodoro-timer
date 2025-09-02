@@ -29,9 +29,6 @@ Go to [relases](https://github.com/theGeorge404/pomodoro-timer/releases) and dow
 ## Bugs :bug:
 May you will discover some bugs while using the program, please contact me to repair it.
 
-### Known Bugs :anger:
-- The personaliced timer featured doesn't work properly
-
 ---
 ## Error Definitions :book:
 

@@ -1,7 +1,7 @@
 import time
 import sys
 
-time_on =  0
+time_on = 0
 time_off = 0
 
 #I used a `time.sleep()` to slow down the softwere and avoid over saturing the user
@@ -28,64 +28,80 @@ def bar(duration=10): #I see it on internet
 
 
 def personaliced():
-    choice2 = input('choose an option [0]go back  [1]set time on   [2]set time off  [3]start personaliced timer  ')
+    choice2 = input('choose an option [0]go back  [1]set time on   [2]set time off  [3]start personaliced timer:  ')
     if choice2 == '0':
         pass
     elif choice2 == '1':
-        time_on = input('Set time to work in minutes:  ') * 60 #why does this not work??
+        ontimeon = input('Set time to work in minutes:  ') * 60 #why does this not work??
         time.sleep(1)
-        personaliced()
     elif choice2 == '2':
-        time_off =  input('Set time to break in minutes:  ') * 60 #other hand this doesn't work
+        ontimeoff =  input('Set time to break in minutes:  ') * 60 #other hand this doesn't work
         time.sleep(1)
-        personaliced()
     elif choice2 == '3':
-        justcheking()  
+        check() 
     else:
         print('error 404')
         time.sleep(1)
-        personaliced()
 
-def justcheking():
+def check():
     chek = input('Ready?? y/n: ')
     if chek == 'y':
-        print(time_on//60, 'minutes concentration')
+        print(time_on // 60, 'minutes concentration')
         bar(time_on)
-        print('time out, take a ',time_off//60,' minutes rest')
+        print('time out, take a ',time_off // 60,' minutes rest')
         bar(time_off)
-        print('another round??')
         time.sleep(1)
-        justcheking()
+        check()
     elif chek == 'n':
         print('aborting operation...')
         time.sleep(1)
     else:
         print('error 404')
         time.sleep(1)
-        justcheking()
+        check()
 
 while True:
-  userchoice = input('choose an option [0]exit  [1]start default timer  [2]personalice timer  ')
+  userchoice = input('choose an option [0]exit  [1]start default timer  [2]personalice timer  [3]start personaliced:  ')
   if userchoice == '0':
         break
   elif userchoice == '1':
       time_off = 300
       time_on = 1500
-      justcheking()     
+      check()     
   elif userchoice == '2':
-      personaliced()
+      choice2 = input('choose an option [0]go back  [1]set time on   [2]set time off :  ')
+      if choice2 == '0':
+         pass
+      elif choice2 == '1':
+         time_on = int(input('Set time to work in minutes:  ')) * 60
+         time.sleep(1)
+      elif choice2 == '2':
+         time_off =  int(input('Set time to break in minutes:  ')) * 60
+         time.sleep(1)
+      else:
+         print('error 404')
+         time.sleep(1)
+  elif userchoice == '3':
+      check()
   elif userchoice == 'debug':
+      print('starting debug mode, please wait')
+      time.sleep(1)
+      print('---')
       print('var values:')
-      print(time_on, 'time on')
-      print(time_off, 'time off')
-      print(userchoice, 'userchoice')
+      print(time_on, '= time on')
+      print(time_off, '= time off')
+      print(userchoice, '= userchoice')
+      time.sleep(1)
       print('---')
       print('reseting var values')
       time_on = 0
+      time_off = 0
       userchoice = 'none'
       chek = 'none'
       choice2 = 'none'
+      bar(5)
       print('values rested correctly')
+      time.sleep(1)
       print('---')
       print('exiting debug...')
       time.sleep(1)
