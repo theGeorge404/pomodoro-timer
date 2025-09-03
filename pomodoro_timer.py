@@ -15,7 +15,7 @@ def countdown():
    time.sleep(1)
    print('start')
 
-def bar(duration=10): #I see it on internet
+def bar(duration=10):
     total = 100  
     for i in range(total + 1):
         percent = (i / total) * 100
@@ -67,7 +67,6 @@ while True:
                                                                                          
 ''')
   print('Choose an option')
-  print()
   userchoice = input('[0]exit  [1]start default timer  [2]personalice timer  [3]start personaliced:  ')
   if userchoice == '0':
         break

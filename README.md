@@ -8,7 +8,7 @@
 ---
 
 ## About that :clipboard:
-It's a bit simple code with a lot of funcionality, this is my first write program I have ever created, I do it with out chat gpt or searching in web, so I'm very proud of what I make and I will getting it better with the time I will improve it.
+It's a bit simple code with a lot of funcionality, this is my first write program I have ever created, I do it without ai, so I'm very proud of what I make and I will getting it better with the time I will improve it.
 
 ---
 
@@ -27,7 +27,7 @@ Go to [relases](https://github.com/theGeorge404/pomodoro-timer/releases) and dow
 
 ### Info :eyes:
 - In the main menu, write `debug` to see all variable values and restore them.
--You **can't** put a decimal numers in time
+ - You **can't** put a decimal numers in time.
 ---
 ## Bugs :bug:
 May you will discover some bugs while using the program, please contact me to repair it.
